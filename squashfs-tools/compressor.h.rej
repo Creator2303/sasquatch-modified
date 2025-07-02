@@ -1,0 +1,17 @@
+--- squashfs-tools/compressor.h	2016-08-25 09:06:22.983529595 -0400
++++ squashfs-tools-patched/compressor.h	2016-08-25 09:06:03.223530354 -0400
+@@ -59,11 +59,14 @@
+ }
+ 
+ 
++/* CJH: Needed more logic for compression auto-detection, no longer inlined
+ static inline int compressor_uncompress(struct compressor *comp, void *dest,
+ 	void *src, int size, int block_size, int *error)
+ {
+ 	return comp->uncompress(dest, src, size, block_size, error);
+ }
++*/
++int compressor_uncompress(struct compressor *comp, void *dest, void *src, int size, int block_size, int *error);
+ 
+ 
+ /*
