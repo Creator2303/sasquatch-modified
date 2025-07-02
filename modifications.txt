@@ -7,6 +7,11 @@ Changes include:
 - Patched LZMA integration
 
 ## Build
+
+sudo apt update
+sudo apt install build-essential gcc g++ make zlib1g-dev liblzma-dev liblzo2-dev
+
+
 squashfs-tools
 make
 sudo make install
