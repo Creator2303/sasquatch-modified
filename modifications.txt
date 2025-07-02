@@ -1,0 +1,12 @@
+# Sasquatch Modified
+
+This is a modified version of Sasquatch, a tool for extracting SquashFS file systems.  
+Changes include:
+- Build fixes for modern GCC
+- Memory safety improvements
+- Patched LZMA integration
+
+## Build
+squashfs-tools
+make
+sudo make install
